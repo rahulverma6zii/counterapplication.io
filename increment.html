@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Increment decrement Application</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center" id="number">0</h1>
+        <div class="buttongroup text-center">
+            <button class="btn btn-primary btn-lg" onclick="increment();">+</button>
+
+            <button class="btn btn-success btn-lg" onclick="decrement();">-</button>
+            <button class="btn btn-danger btn-lg" onclick="neutral();">0</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
+<style>
+    body {
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+    }
+
+    .container {
+        border: 3px solid black;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        box-shadow: 0 10px grey;
+        border: none;
+
+    }
+
+
+
+    button:active {
+
+        transform: translateY(4px);
+        box-shadow: 0 10px #666;
+    }
+</style>
