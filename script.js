@@ -1,4 +1,5 @@
 let element=document.getElementById("number");
+
 function increment(){
     element.innerText++;
 }
